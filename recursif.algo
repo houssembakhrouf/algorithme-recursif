@@ -10,7 +10,7 @@ BEGIN
            
         
     END_IF
-    RETURN value ;
+    RETURN false ;
 END
 
 ALGORITHM algorithm_name
@@ -20,7 +20,8 @@ VAR
    i , j INTEGER ;
 BEGIN
   Read (chaine);
-  j:=chaine.length ;
+  i:=0
+  j:=chaine.length-1 ;
   res:= palind(chaine , i , j )
   IF (res==true) THEN
     Write("est palindrome")
